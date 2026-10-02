@@ -26,6 +26,10 @@
 
 use soroban_sdk::{Address, BytesN, Env};
 
+use crate::constants::TTL_ONE_YEAR;
+use crate::errors::Error;
+use crate::DataKey;
+
 /// Store a 32-byte alias hash for the calling user.
 ///
 /// `require_auth` is called so only the user themselves can set or update
